@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SAMLUserDetailsServiceImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Spring Boot and Spring Security SAML integration sample</a> &gt; <a href="index.source.html" class="el_package">com.vdenotaris.spring.boot.security.saml.web.core</a> &gt; <span class="el_source">SAMLUserDetailsServiceImpl.java</span></div><h1>SAMLUserDetailsServiceImpl.java</h1><pre class="source lang-java linenums">/*
+ * Copyright 2017 Vincenzo De Notaris
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License. 
+ */
+
+package com.vdenotaris.spring.boot.security.saml.web.core;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.saml.SAMLCredential;
+import org.springframework.security.saml.userdetails.SAMLUserDetailsService;
+import org.springframework.stereotype.Service;
+
+@Service
+<span class="fc" id="L33">public class SAMLUserDetailsServiceImpl implements SAMLUserDetailsService {</span>
+	
+	// Logger
+<span class="fc" id="L36">	private static final Logger LOG = LoggerFactory.getLogger(SAMLUserDetailsServiceImpl.class);</span>
+	
+	public Object loadUserBySAML(SAMLCredential credential)
+			throws UsernameNotFoundException {
+		
+		// The method is supposed to identify local account of user referenced by
+		// data in the SAML assertion and return UserDetails object describing the user.
+		
+<span class="fc" id="L44">		String userID = credential.getNameID().getValue();</span>
+		
+<span class="fc" id="L46">		LOG.info(userID + &quot; is logged in&quot;);</span>
+<span class="fc" id="L47">		List&lt;GrantedAuthority&gt; authorities = new ArrayList&lt;GrantedAuthority&gt;();</span>
+<span class="fc" id="L48">		GrantedAuthority authority = new SimpleGrantedAuthority(&quot;ROLE_USER&quot;);</span>
+<span class="fc" id="L49">		authorities.add(authority);</span>
+
+		// In a real scenario, this implementation has to locate user in a arbitrary
+		// dataStore based on information present in the SAMLCredential and
+		// returns such a date in a form of application specific UserDetails object.
+<span class="fc" id="L54">		return new User(userID, &quot;&lt;abc123&gt;&quot;, true, true, true, true, authorities);</span>
+	}
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

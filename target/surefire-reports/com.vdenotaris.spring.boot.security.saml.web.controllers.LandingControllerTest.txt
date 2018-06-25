@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.vdenotaris.spring.boot.security.saml.web.controllers.LandingControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.035 sec - in com.vdenotaris.spring.boot.security.saml.web.controllers.LandingControllerTest

@@ -1,0 +1,8 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Spring Boot and Spring Security SAML integration sample,com.vdenotaris.spring.boot.security.saml.web.config,MvcConfig,0,20,0,0,0,6,0,3,0,3
+Spring Boot and Spring Security SAML integration sample,com.vdenotaris.spring.boot.security.saml.web.config,WebSecurityConfig,11,678,0,0,4,158,1,50,1,50
+Spring Boot and Spring Security SAML integration sample,com.vdenotaris.spring.boot.security.saml.web.core,CurrentUserHandlerMethodArgumentResolver,0,30,0,6,0,7,0,6,0,3
+Spring Boot and Spring Security SAML integration sample,com.vdenotaris.spring.boot.security.saml.web.core,SAMLUserDetailsServiceImpl,0,45,0,0,0,8,0,3,0,3
+Spring Boot and Spring Security SAML integration sample,com.vdenotaris.spring.boot.security.saml.web.controllers,SSOController,0,65,0,8,0,17,0,8,0,4
+Spring Boot and Spring Security SAML integration sample,com.vdenotaris.spring.boot.security.saml.web.controllers,LandingController,0,11,0,0,0,3,0,2,0,2
+Spring Boot and Spring Security SAML integration sample,com.vdenotaris.spring.boot.security.saml.web,Application,14,3,0,0,3,1,2,1,2,1

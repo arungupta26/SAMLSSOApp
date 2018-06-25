@@ -1,0 +1,6 @@
+/Arun Personal Data/workspace/SAMLSSOApp/src/test/java/com/vdenotaris/spring/boot/security/saml/web/core/CurrentUserHandlerMethodArgumentResolverTest.java
+/Arun Personal Data/workspace/SAMLSSOApp/src/test/java/com/vdenotaris/spring/boot/security/saml/web/TestConfig.java
+/Arun Personal Data/workspace/SAMLSSOApp/src/test/java/com/vdenotaris/spring/boot/security/saml/web/core/SAMLUserDetailsServiceImplTest.java
+/Arun Personal Data/workspace/SAMLSSOApp/src/test/java/com/vdenotaris/spring/boot/security/saml/web/controllers/LandingControllerTest.java
+/Arun Personal Data/workspace/SAMLSSOApp/src/test/java/com/vdenotaris/spring/boot/security/saml/web/CommonTestSupport.java
+/Arun Personal Data/workspace/SAMLSSOApp/src/test/java/com/vdenotaris/spring/boot/security/saml/web/controllers/SSOControllerTest.java

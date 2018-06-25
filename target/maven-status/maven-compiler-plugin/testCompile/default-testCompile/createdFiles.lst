@@ -1,0 +1,9 @@
+com/vdenotaris/spring/boot/security/saml/web/core/CurrentUserHandlerMethodArgumentResolverTest$MethodSamples.class
+com/vdenotaris/spring/boot/security/saml/web/controllers/LandingControllerTest$MockArgumentResolver.class
+com/vdenotaris/spring/boot/security/saml/web/core/SAMLUserDetailsServiceImplTest.class
+com/vdenotaris/spring/boot/security/saml/web/TestConfig.class
+com/vdenotaris/spring/boot/security/saml/web/core/CurrentUserHandlerMethodArgumentResolverTest.class
+com/vdenotaris/spring/boot/security/saml/web/controllers/LandingControllerTest.class
+com/vdenotaris/spring/boot/security/saml/web/controllers/SSOControllerTest.class
+com/vdenotaris/spring/boot/security/saml/web/controllers/LandingControllerTest$1.class
+com/vdenotaris/spring/boot/security/saml/web/CommonTestSupport.class
